@@ -1,0 +1,123 @@
+$color_1: #ffffff;
+$font_family_1: si;
+$background_color_1: none;
+$background_color_2: #4da7de;
+$background_color_3: #3e5b98;
+$background_color_4: #e02a20;
+$background_color_5: #20B038;
+$background_color_6: #405de6;
+$background_color_7: #61bbf2;
+$background_color_8: #526fac;
+$background_color_9: #f43e34;
+$background_color_10: #34c44c;
+$background_color_11: #5471fa;
+
+@font-face {
+	font-family: 'si';
+	src: url('/assets/fonts/socicon.eot');
+	src: url('/assets/fonts/fonts/socicon.eot?#iefix') format('embedded-opentype'), url('/assets/fonts/socicon.woff') format('woff'), url('/assets/fonts/socicon.ttf') format('truetype'), url('/assets/fonts/socicon.svg#icomoonregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: $font_family_1;
+		src: url(/assets/fonts/fonts/socicon.svg) format(svg);
+	}
+}
+.soc {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	li {
+		display: inline-block;
+		*display: inline;
+		zoom: 1;
+		a {
+			font-family: $font_family_1 !important;
+			font-style: normal;
+			font-weight: 400;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			-o-box-sizing: border-box;
+			box-sizing: border-box;
+			-o-transition: .1s;
+			-ms-transition: .1s;
+			-moz-transition: .1s;
+			-webkit-transition: .1s;
+			transition: .1s;
+			-webkit-transition-property: transform;
+			transition-property: transform;
+			-webkit-transform: translateZ(0);
+			transform: translateZ(0);
+			overflow: hidden;
+			text-decoration: none;
+			text-align: center;
+			display: block;
+			position: relative;
+			z-index: 1;
+			width: 60px;
+			height: 60px;
+			line-height: 60px;
+			font-size: 30px;
+			-webkit-border-radius: 4px;
+			-moz-border-radius: 4px;
+			border-radius: 4px;
+			margin-right: 3px;
+			color: $color_1;
+			background-color: $background_color_1;
+		}
+	}
+}
+.soc-icon-last {
+	margin: 0 !important;
+}
+.soc-twitter {
+	background-color: $background_color_2;
+	&:before {
+		content: '\e040';
+	}
+	&:hover {
+		background-color: $background_color_7;
+	}
+}
+.soc-facebook {
+	background-color: $background_color_3;
+	&:before {
+		content: '\e041';
+	}
+	&:hover {
+		background-color: $background_color_8;
+	}
+}
+.soc-youtube {
+	background-color: $background_color_4;
+	&:before {
+		content: '\e051';
+	}
+	&:hover {
+		background-color: $background_color_9;
+	}
+}
+.soc-whatsapp {
+	background-color: $background_color_5;
+	&:before {
+		content: '\e01b';
+	}
+	&:hover {
+		background-color: $background_color_10;
+	}
+}
+.soc-instagram {
+	background-color: $background_color_6;
+	&:before {
+		content: '\e057';
+	}
+	&:hover {
+		background-color: $background_color_11;
+	}
+}

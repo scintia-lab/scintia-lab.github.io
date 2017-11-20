@@ -1,0 +1,40 @@
+---
+---
+
+@import '1-tools/-tools-dir'
+@import '2-base/-base-dir'
+@import '3-sections/-sections-dir'
+
+
+
+img.hline
+  display: block
+  margin: 2rem auto
+  width: 70%
+
+div.container
+  display: block
+  margin: auto
+  width: 70%
+
+
+input[type=text]
+  border: 1px solid #d7dbdd
+  padding: 1em 1rem
+  text-align: right
+  color: $light-gray
+  border-radius: 3px
+
+input[type=text]:focus::-webkit-input-placeholder
+    transition: opacity 0.2s 0.2s ease
+    opacity: 0
+
+
+
+input[type=submit]
+  background-color: $strong-teal
+  border: none
+  padding: .8rem 2rem
+  font-weight: 600
+  color: white
+  border-radius: 3px
