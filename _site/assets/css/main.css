@@ -1,0 +1,433 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'si';
+  src: url("/assets/fonts/socicon.eot");
+  src: url("/assets/fonts/fonts/socicon.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/socicon.woff") format("woff"), url("/assets/fonts/socicon.ttf") format("truetype"), url("/assets/fonts/socicon.svg#icomoonregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  @font-face {
+    font-family: si;
+    src: url(/assets/fonts/fonts/socicon.svg) format(svg); } }
+.soc {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+  .soc li {
+    display: inline-block;
+    *display: inline;
+    zoom: 1; }
+    .soc li a {
+      font-family: si !important;
+      font-style: normal;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      -o-transition: .1s;
+      -ms-transition: .1s;
+      -moz-transition: .1s;
+      -webkit-transition: .1s;
+      transition: .1s;
+      -webkit-transition-property: transform;
+      transition-property: transform;
+      -webkit-transform: translateZ(0);
+      transform: translateZ(0);
+      overflow: hidden;
+      text-decoration: none;
+      text-align: center;
+      display: block;
+      position: relative;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 30px;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      border-radius: 4px;
+      margin-right: 3px;
+      color: #ffffff;
+      background-color: none; }
+
+.soc-icon-last {
+  margin: 0 !important; }
+
+.soc-twitter {
+  background-color: #4da7de; }
+  .soc-twitter:before {
+    content: '\e040'; }
+  .soc-twitter:hover {
+    background-color: #61bbf2; }
+
+.soc-facebook {
+  background-color: #3e5b98; }
+  .soc-facebook:before {
+    content: '\e041'; }
+  .soc-facebook:hover {
+    background-color: #526fac; }
+
+.soc-youtube {
+  background-color: #e02a20; }
+  .soc-youtube:before {
+    content: '\e051'; }
+  .soc-youtube:hover {
+    background-color: #f43e34; }
+
+.soc-whatsapp {
+  background-color: #20B038; }
+  .soc-whatsapp:before {
+    content: '\e01b'; }
+  .soc-whatsapp:hover {
+    background-color: #34c44c; }
+
+.soc-instagram {
+  background-color: #405de6; }
+  .soc-instagram:before {
+    content: '\e057'; }
+  .soc-instagram:hover {
+    background-color: #5471fa; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  height: 100vh;
+  color: #333333;
+  font-family: "Open Sans", sans-serif, sans-serif; }
+
+section.mailing-list {
+  background: #faeab2;
+  background: -webkit-linear-gradient(left top, #faeab2, #f9985e);
+  background: -o-linear-gradient(bottom right, #faeab2, #f9985e);
+  background: -moz-linear-gradient(bottom right, #faeab2, #f9985e);
+  background: linear-gradient(to bottom right, #faeab2, #f9985e); }
+
+nav {
+  background-color: #4d4d56;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  align-items: center;
+  box-shadow: 0px 2px 5px #888888;
+  position: static;
+  z-index: 99; }
+  nav .nav-logo img {
+    height: 2.5rem;
+    order: 1; }
+  nav #nav-mobile {
+    display: none; }
+  nav ul {
+    order: 2;
+    margin-right: 2rem; }
+  nav ul li {
+    display: inline-block;
+    margin-right: 1.3rem;
+    font-size: 1rem; }
+  nav ul li a {
+    text-decoration: none;
+    color: white; }
+
+section.jumbotron {
+  background-image: url(/assets/img/jumbo.jpg);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+    background-size-display: -webkit-flex;
+    background-size-display: flex;
+    background-size-flex-direction: column;
+  -webkit-align-items: center;
+    -webkit-align-items-align-items: center;
+  -webkit-align-content: flex-start;
+    -webkit-align-content-align-content: flex-start;
+  height: 500px;
+  padding: 5rem 3rem 0 12rem; }
+  section.jumbotron img {
+    height: 5rem;
+    order: 1; }
+  section.jumbotron .motto {
+    order: 1;
+    margin-top: 1rem; }
+    section.jumbotron .motto h1 {
+      font-weight: 400;
+      font-size: 3.5rem;
+      padding: 1rem 0;
+      margin-left: -5px;
+      display: inline-block;
+      color: white; }
+
+section.awards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: #4d4d56; }
+  section.awards h2 {
+    order: 1;
+    margin-right: 1.5rem;
+    font-size: 2rem;
+    color: white; }
+  section.awards img {
+    order: 1;
+    height: 3rem; }
+
+section.presentation {
+  padding-top: 5rem;
+  padding-bottom: 5rem; }
+  section.presentation h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold; }
+    section.presentation h2 span {
+      font-weight: bold; }
+  section.presentation div.equipment {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 3rem auto; }
+    section.presentation div.equipment div.equipment-item {
+      order: 1;
+      width: 200px; }
+      section.presentation div.equipment div.equipment-item img {
+        width: 200px;
+        margin-bottom: 1.3rem; }
+      section.presentation div.equipment div.equipment-item h4 {
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 0.7rem;
+        line-height: 1.5rem; }
+      section.presentation div.equipment div.equipment-item p {
+        font-style: italic;
+        color: #666666; }
+  section.presentation p.centered-p {
+    color: #5c758a;
+    text-align: center;
+    font-size: 1.2rem; }
+  section.presentation a {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    text-align: center; }
+    section.presentation a p {
+      background-color: #5c758a;
+      padding: 1rem 2rem;
+      display: inline-block;
+      color: white;
+      border-radius: 3px; }
+
+section.mailing-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem; }
+  section.mailing-list h2 {
+    font-size: 1.3rem;
+    margin-right: 1.5rem; }
+
+section.why {
+  background-color: #adddd3;
+  padding: 5rem 0; }
+  section.why h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-align: center; }
+    section.why h2 span {
+      font-weight: 600; }
+  section.why div.explanation {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: row; }
+    section.why div.explanation div.item {
+      order: 1;
+      width: 350px; }
+      section.why div.explanation div.item h3 {
+        font-size: 1.7rem;
+        text-align: center;
+        color: #544c84;
+        font-weight: 600;
+        margin-bottom: 2rem; }
+      section.why div.explanation div.item img {
+        display: block;
+        margin: auto;
+        width: 200px; }
+      section.why div.explanation div.item p {
+        line-height: 1.4rem;
+        text-align: justify; }
+
+section.whom {
+  margin: 5rem auto; }
+  section.whom h2 {
+    font-size: 2rem;
+    text-align: center; }
+  section.whom div.targets {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    section.whom div.targets div.item {
+      order: 1;
+      width: 230px;
+      padding: 1rem; }
+      section.whom div.targets div.item img {
+        width: 170px;
+        display: block;
+        margin: auto; }
+      section.whom div.targets div.item h4 {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 2rem 0; }
+      section.whom div.targets div.item p {
+        text-align: left;
+        line-height: 1.3rem;
+        color: #666666; }
+
+section.contact {
+  background-image: url(/assets/img/gradient-bg.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: cover;
+  padding: 5rem 0; }
+  section.contact h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: white; }
+  section.contact span {
+    font-weight: 600; }
+  section.contact form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 2rem; }
+  section.contact div.form-divider {
+    order: 1;
+    margin: 2rem; }
+    section.contact div.form-divider div.form-splicer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      section.contact div.form-divider div.form-splicer input {
+        order: 1;
+        margin-top: 1.5rem;
+        width: 200px;
+        text-align: left; }
+      section.contact div.form-divider div.form-splicer input.textarea {
+        height: 10rem;
+        width: 300px; }
+      section.contact div.form-divider div.form-splicer input.button {
+        text-align: center;
+        background-color: #f9985e;
+        color: #333333; }
+
+footer {
+  padding: 5rem 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: #544c84; }
+  footer div.info img {
+    height: 3rem;
+    margin-bottom: 1.5rem; }
+  footer div.info ul li {
+    list-style: none;
+    color: white;
+    line-height: 1.7rem;
+    font-size: 1.2rem; }
+    footer div.info ul li a {
+      text-decoration: none;
+      color: white; }
+  footer ul.soc {
+    order: 2; }
+    footer ul.soc h3 {
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 1.5rem; }
+
+img.hline {
+  display: block;
+  margin: 2rem auto;
+  width: 70%; }
+
+div.container {
+  display: block;
+  margin: auto;
+  width: 70%; }
+
+input[type=text] {
+  border: 1px solid #d7dbdd;
+  padding: 1em 1rem;
+  text-align: right;
+  color: #666666;
+  border-radius: 3px; }
+
+input[type=text]:focus::-webkit-input-placeholder {
+  transition: opacity 0.2s 0.2s ease;
+  opacity: 0; }
+
+input[type=submit] {
+  background-color: #5c758a;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-weight: 600;
+  color: white;
+  border-radius: 3px; }
